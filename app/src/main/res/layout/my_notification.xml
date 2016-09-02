@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/lufei"
+        android:id="@+id/imgeId"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="海贼王，我当定了！"
+        android:textSize="25sp"
+        android:layout_toRightOf="@id/imgeId"
+        android:layout_marginTop="5dp"
+        android:id="@+id/msgId"/>
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="10"
+        android:id="@+id/progressId"
+        android:layout_toRightOf="@id/imgeId"
+        android:layout_below="@id/msgId"
+        android:layout_marginTop="15dp"
+        style="@android:style/Widget.ProgressBar.Horizontal"/>
+
+</RelativeLayout>
